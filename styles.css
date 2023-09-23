@@ -9,12 +9,19 @@
     --body-fonts: "Helvetica", "Arial", sans-serif;
     --line-height: 1.5;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+body, html{
+    margin:0;
+    padding:0;
+}
 
 body{
     cursor: url("./images/porsche-cursor.svg"),auto;
@@ -146,9 +153,11 @@ h1 {
 .stars-bg{
     background-image: url("/images/stars.gif");
 }
+.tokenomics{
+    max-width: 100%;
+}
 
-
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 250px) and (max-width: 768px) {
     .nav-wrapper{
         flex-wrap: wrap;
         padding: 10px;
@@ -173,6 +182,22 @@ h1 {
     .game-section iframe{
         max-width: 300px;
         max-height:400px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .blueish-text{
+        font-size: 14px;
+    }
+    .my-4{
+        margin:15px 0px;
+    }
+    .container{
+        padding: 10px;
+        overflow-x: hidden;
+    }
+    .blueish-text{
+        font-size: 14px;
     }
 }
 
